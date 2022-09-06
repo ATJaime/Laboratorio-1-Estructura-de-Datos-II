@@ -17,13 +17,8 @@ tree.add_node(7, 4)
       /
      7
 """""
-tree.add_node(8, 6)
-tree.add_node(9, 6)
-tree.add_node(10, 9)
-tree.add_node(11, 10)
-tree.add_node(12, 9)
-tree.add_node(13, 11)
+tree.add_node(8, 7)
 tree.transversal(tree.root, [])
 print()
-print("El abuelo es:",tree.find_grandfather(tree.return_node(11)))
+print("El abuelo es:",tree.find_grandfather(tree.return_node(4)))
 print("El tío es:", tree.find_uncle(tree.return_node(6)))
