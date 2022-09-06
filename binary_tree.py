@@ -1,5 +1,3 @@
-import sys
-
 class BinaryTree:
     class Node:
         def __init__(self, data: int, right = None, left = None) -> None:
@@ -26,7 +24,7 @@ class BinaryTree:
                 node.right = self.Node(data)
             else:
                 print("Este nodo ya tiene dos hijos")
-            self.balance()
+            #self.balance()
         else:
             print("El nodo no fue encontrado")
 
@@ -93,7 +91,7 @@ class BinaryTree:
                         leaf.left = node.right
                 else:
                     temp.right = node.right
-            self.balance()
+            #self.balance()
         else:
             print("El nodo no fue encontrado")
 
